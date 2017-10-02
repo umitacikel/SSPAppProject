@@ -60,6 +60,7 @@ public class Login_Activity extends AppCompatActivity {
                         startActivity(in);
 
 
+
                         //Henter brugeren som er logget ind
                         while(cursor2.moveToNext()) {
                             bruger.add(cursor2.getString(cursor2.getColumnIndex(Registration_helper.COL_1)));
@@ -74,11 +75,6 @@ public class Login_Activity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), bruger.toString(), Toast.LENGTH_LONG).show();
                         Log.d("Person i Array", bruger.toString());
                         //-----------------------
-
-
-
-                        //Gem Login knap
-
 
                     } else {
                         Toast.makeText(getApplicationContext(), "Fejl, Prøv Igen", Toast.LENGTH_LONG).show();
@@ -96,6 +92,7 @@ public class Login_Activity extends AppCompatActivity {
         Intent gotoregistration = new Intent(this, Registration_page.class);
         startActivity(gotoregistration);
     }
+
 
 }
 

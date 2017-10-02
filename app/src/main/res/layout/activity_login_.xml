@@ -34,7 +34,7 @@
             <EditText
                 android:id="@+id/Login_Email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Email"
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
@@ -49,7 +49,7 @@
             <EditText
                 android:id="@+id/Login_Password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="Password"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
@@ -57,7 +57,7 @@
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/Login_Btn"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginBottom="24dp"
             android:layout_marginTop="24dp"
             android:padding="12dp"
@@ -66,7 +66,7 @@
         <TextView
             android:id="@+id/Login_RegBtn"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:onClick="gotoRegi"

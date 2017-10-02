@@ -76,8 +76,8 @@ public class Registration_page extends AppCompatActivity {
             Long id = db.insert(Registration_helper.TABLE_NAME, null, contentValues);
 
             Toast.makeText(getApplicationContext(), "Register Successfully", Toast.LENGTH_LONG).show();
-            Intent gotoMain = new Intent(this, MainActivity.class);
-            startActivity(gotoMain);
+            Intent gotoLogin = new Intent(this, Login_Activity.class);
+            startActivity(gotoLogin);
 
         }else{
             Toast.makeText(getApplication(),"Fejl, Email findes allerede", Toast.LENGTH_LONG).show();

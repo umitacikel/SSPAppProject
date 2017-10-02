@@ -107,12 +107,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.fragment,  new SSP_Fragment() ).commit();
 
 
-        } else if (id == R.id.nav_logind) {
-            setTitle("Login");
-            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragment,  new LoginFragment() ).commit();
-
-        }else if (id == R.id.nav_Startside){
+        } else if (id == R.id.nav_Startside){
            setTitle("Startside");
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, new SSP_Startside()).commit();
