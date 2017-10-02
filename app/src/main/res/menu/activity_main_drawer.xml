@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logind"
+                android:icon="@drawable/ic_lock_outline_black_24dp"
+                android:title="Log Ind" />
+
+        </menu>
+    </item>
+        <item
+            android:id="@+id/nav_Startside"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Startside"/>
+        <item
+            android:id="@+id/nav_SSP"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="SSP" />
+        <item
+            android:id="@+id/nav_Cube"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Cube" />
+        <item
+            android:id="@+id/nav_Tetriz"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Tetriz" />
+        <item
+            android:id="@+id/nav_Publikationer"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="Publikationer" />
+
+
+    </group>
+
+
+
+</menu>
