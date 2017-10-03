@@ -15,6 +15,7 @@
     <string name="email">Email</string>
     <string name="opret">Opret</string>
     <string name="login">Login</string>
+    <string name="EmailSend">yunas3000@hotmail.com</string>
     <string name="no_account_yet_create_one">No account yet? Create one</string>
     <string name="APP_TOKEN">9dwnbp899bruf8wu3w7l6anhq</string>
 </resources>

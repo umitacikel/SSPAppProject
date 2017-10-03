@@ -14,7 +14,7 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:paddingTop="56dp"
-        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteY="103dp"
         tools:layout_editor_absoluteX="8dp">
 
         <ImageView
@@ -74,5 +74,18 @@
             android:textSize="16sp" />
 
     </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="87dp"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="327dp"
+        android:layout_height="154dp"
+        app:srcCompat="@drawable/ssp_startup_v2"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="37dp" />
+</RelativeLayout>
 </android.support.constraint.ConstraintLayout>
