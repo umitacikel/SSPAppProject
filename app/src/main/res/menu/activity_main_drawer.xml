@@ -25,8 +25,10 @@
             android:id="@+id/nav_Publikationer"
             android:icon="@drawable/ic_folder_black_24dp"
             android:title="Publikationer" />
-
-
+        <item
+            android:id="@+id/Btn_logout"
+            android:icon="@drawable/logout"
+            android:title="Logud"/>
     </group>
 
 

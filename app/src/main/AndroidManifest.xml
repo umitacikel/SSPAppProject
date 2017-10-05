@@ -11,19 +11,14 @@
         android:roundIcon="@drawable/ssplogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".SplashScreen"
-
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-
 
         <activity
             android:name=".Login_Activity"
@@ -31,16 +26,10 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-
             </intent-filter>
         </activity>
 
-
-
         <activity android:name=".Registration_page" />
-
-
 
         <activity
             android:name=".MainActivity"

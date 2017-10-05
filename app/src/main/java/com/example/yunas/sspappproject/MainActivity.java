@@ -16,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -112,6 +114,12 @@ public class MainActivity extends AppCompatActivity
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, new SSP_Startside()).commit();
 
+        }else if(id == R.id.Btn_logout){
+            Intent intent = new Intent(this, Login_Activity.class);
+            startActivity(intent);
+
+            Login_Activity login_activity = new Login_Activity();
+            login_activity.bruger.clear();
         }
         //else if (id == R.id.nav_send) {
 
