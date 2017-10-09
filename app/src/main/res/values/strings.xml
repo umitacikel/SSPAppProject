@@ -7,15 +7,14 @@
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="telefon_nr">Telefon Nr.</string>
     <string name="fornavn">Fornavn</string>
     <string name="efternavn">Efternavn</string>
     <string name="kodeord">Kodeord</string>
     <string name="email">Email</string>
     <string name="opret">Opret</string>
-    <string name="login">Login</string>
-    <string name="EmailSend">yunas3000@hotmail.com</string>
     <string name="no_account_yet_create_one">No account yet? Create one</string>
-    <string name="APP_TOKEN">9dwnbp899bruf8wu3w7l6anhq</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

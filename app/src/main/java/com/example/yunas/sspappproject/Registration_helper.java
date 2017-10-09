@@ -18,9 +18,17 @@ public class Registration_helper extends SQLiteOpenHelper{
     public static final String COL_6="Phone";
 
 
-    public Registration_helper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
-    }
+
+    public static final String c_DATABASE_NAME="c_register.db";
+    public static final String c_TABLE_NAME="c_register";
+    public static final String c_Col_1="ID";
+    public static final String c_Col_2="Emnne";
+    public static final String c_Col_3="Detaljer";
+    public static final String c_Col_4="Dato";
+    public static final String c_Col_5="Sted";
+
+
+    public Registration_helper(Context context, String dbName) {super(context, dbName , null, 1);}
 
 
 
@@ -28,11 +36,13 @@ public class Registration_helper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,FirstName TEXT,LastName TEXT,Password TEXT,Email TEXT,Phone TEXT)");
+        db.execSQL("CREATE TABLE " + c_TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,Emne TEXT,Detaljer TEXT,Dato TEXT,Sted TEXT)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS" + c_TABLE_NAME);
         onCreate(db);
     }
 

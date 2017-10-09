@@ -19,20 +19,17 @@
 
 
         <LinearLayout
-            android:id="@+id/options_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="20dp">
 
             <Button
-                android:id="@+id/read_pdf"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Open Existing Pdf"/>
 
             <Button
-                android:id="@+id/create_new_pdf"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -40,14 +37,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/read_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:visibility="invisible">
 
             <ImageView
-                android:id="@+id/pdfView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -62,7 +57,6 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/previous"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -70,7 +64,6 @@
                     android:text="Previous"/>
 
                 <Button
-                    android:id="@+id/next"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -80,7 +73,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pdf_selection_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -88,14 +80,12 @@
             android:visibility="invisible">
 
             <ListView
-                android:id="@+id/pdfList"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
             </ListView>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/write_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -103,7 +93,6 @@
             android:visibility="invisible">
 
             <EditText
-                android:id="@+id/pdf_content"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -112,7 +101,6 @@
                 android:lines="15"/>
 
             <Button
-                android:id="@+id/generate_pdf"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="Generate Pdf">

@@ -121,20 +121,29 @@ public class MainActivity extends AppCompatActivity
             Login_Activity login_activity = new Login_Activity();
             login_activity.bruger.clear();
         }
-        //else if (id == R.id.nav_send) {
-
-        //}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    public void gotoloog(View view) {
-        Intent gotoregistration = new Intent(this, Login_Activity.class);
-        startActivity(gotoregistration);
+    public void SSP_knap(View view){
+        setTitle("SSP");
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, new SSP_Fragment()).commit();
     }
 
+    public void Tetriz_knap(View view){
+        setTitle("Tetriz");
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, new FirstFragment()).commit();
+    }
+
+    public void Cube_knap(View view){
+        setTitle("Cube");
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, new SecondFragment()).commit();
+    }
 
 
 }

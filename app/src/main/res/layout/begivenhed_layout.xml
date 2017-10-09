@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/Begivenhed_Emne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:ems="10"
+        android:hint="Begivenhed"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Begivenhed_Detaljer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:ems="10"
+        android:hint="Mere Info"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Begivenhed_Sted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:hint="Sted" />
+
+    <EditText
+        android:id="@+id/Begivenhed_Dato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:hint="Dato" />
+
+    <Button
+        android:id="@+id/Begivenhed_Opret_Btn"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:text="Opret" />
+
+    <Button
+        android:id="@+id/Begivenhed_annu_Btn"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:text="Annuler" />
+
+</LinearLayout>

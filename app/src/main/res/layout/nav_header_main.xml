@@ -16,7 +16,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="66dp"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -25,7 +24,6 @@
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
-        android:id="@+id/NameOnUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"

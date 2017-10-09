@@ -15,7 +15,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ssp_startup_v2"
@@ -26,7 +25,6 @@
 
     </ImageView>
     <TextView
-        android:id="@+id/textView8"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:text="AlFuego - v.1.0"

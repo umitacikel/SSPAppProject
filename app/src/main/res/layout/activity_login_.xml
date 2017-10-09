@@ -8,23 +8,24 @@
 
 
     <LinearLayout
-        android:layout_width="359dp"
-        android:layout_height="378dp"
+        android:layout_width="381dp"
+        android:layout_height="438dp"
         android:orientation="vertical"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:paddingTop="56dp"
-        tools:layout_editor_absoluteY="186dp"
-        tools:layout_editor_absoluteX="13dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="72dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="24dp"
-            android:contentDescription="" />
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <!-- Email Label -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:src="@drawable/ssp_startup_v2"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-102dp" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,7 +65,6 @@
             android:text="Login" />
 
         <TextView
-            android:id="@+id/Login_RegBtn"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="24dp"
@@ -75,11 +75,4 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="327dp"
-        android:layout_height="154dp"
-        android:src="@drawable/ssp_startup_v2"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="47dp" />
 </android.support.constraint.ConstraintLayout>

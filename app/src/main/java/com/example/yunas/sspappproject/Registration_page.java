@@ -32,7 +32,7 @@ public class Registration_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
 
-        openHelper = new Registration_helper(this);
+        openHelper = new Registration_helper(getApplicationContext(), Registration_helper.DATABASE_NAME);
         _Reg_Button =(Button)findViewById(R.id.Reg_Button);
         _FirstName =(EditText)findViewById(R.id.FirstName);
         _LastName=(EditText)findViewById(R.id.LastName);
@@ -73,7 +73,7 @@ public class Registration_page extends AppCompatActivity {
         cursor = db.rawQuery("SELECT * FROM " + Registration_helper.TABLE_NAME +" WHERE Email = '" + Email + "'", null);
 
         if(cursor.getCount()==0){
-            Long id = db.insert(Registration_helper.TABLE_NAME, null, contentValues);
+            db.insert(Registration_helper.TABLE_NAME, null, contentValues);
 
             Toast.makeText(getApplicationContext(), "Register Successfully", Toast.LENGTH_LONG).show();
             Intent gotoLogin = new Intent(this, Login_Activity.class);

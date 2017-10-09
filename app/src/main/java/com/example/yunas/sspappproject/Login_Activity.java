@@ -1,26 +1,19 @@
 package com.example.yunas.sspappproject;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-
-import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 public class Login_Activity extends AppCompatActivity {
 
@@ -37,7 +30,8 @@ public class Login_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_);
 
-        openHelper = new Registration_helper(getApplicationContext());
+
+        openHelper = new Registration_helper(getApplicationContext(), Registration_helper.DATABASE_NAME);
         db = openHelper.getReadableDatabase();
 
 
@@ -57,12 +51,20 @@ public class Login_Activity extends AppCompatActivity {
                 cursor2 = db.rawQuery("SELECT * FROM " + Registration_helper.TABLE_NAME + " WHERE " + Registration_helper.COL_5 + "=?", new String[]{Email});
 
 
-                if (cursor != null) {
+
+                if(Email.equals("admin")&& Password.equals("admin")){
+
+                    Intent admin = new Intent(Login_Activity.this, Admin_Side.class);
+                    startActivity(admin);
+
+                }else if (cursor != null) {
                     if (cursor.getCount() > 0) {
                         Toast.makeText(getApplicationContext(), "Login Succesfuldt", Toast.LENGTH_LONG).show();
                         bruger.clear();
+
                         Intent in = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(in);
+
 
 
                         //Henter brugeren som er logget ind
@@ -79,6 +81,10 @@ public class Login_Activity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), bruger.toString(), Toast.LENGTH_LONG).show();
                         Log.d("Person i Array", bruger.toString());
                         //-----------------------
+
+                        _Login_Email.setText("");
+                        _Login_Password.setText("");
+
 
                         String BrugerNavn = bruger.get(1);
 
