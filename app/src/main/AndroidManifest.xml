@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SplashScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,24 +24,29 @@
         <activity
             android:name=".Login_Activity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registration_page" />
+        <activity android:name=".Registration_page"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </activity>
+
         <activity android:name=".Admin_Side" />
         <activity android:name=".Admin_ssp_side" />
         <activity android:name=".Admin_cube_side" />
-        <activity android:name=".Admin_tetriz_side">
+        <activity android:name=".Admin_tetriz_side"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
