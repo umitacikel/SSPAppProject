@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yunas.sspappproject.SSP_Fritid">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fritidspas"
+            android:layout_above="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="18dp"
+            android:text="Fritidspasset skal sikre, at børn og unge primært i målgruppen 9-17 år, får chancen for at komme i gang med en fritidsaktivitet."
+            android:layout_above="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginBottom="64dp"
+            android:text="Der kan gives støtte til:
+Kontingent - max. 2.000 kr. pr. år.
+Udstyr - max. 600 kr. pr. år.
+Deltagerbetaling til enkeltarrangementer, stævner og lejre - max. 1.000 kr. pr. år.
+Et barn kan max. opnå 3.000 kr. i støtte pr. år.  "
+            android:layout_above="@+id/BtnPdf"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView9"
+            android:layout_marginTop="26dp"
+            android:text="Tryk Her" />
+
+        <Button
+            android:id="@+id/BtnPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pdf_icon" />
+    </RelativeLayout>
+
+
+</FrameLayout>

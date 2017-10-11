@@ -3,12 +3,10 @@ package com.example.yunas.sspappproject;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentTabHost;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 
 /**
@@ -16,7 +14,7 @@ import android.widget.Button;
  */
 public class SSP_Fragment extends Fragment {
 
-
+    private FragmentTabHost mTabhost;
     public SSP_Fragment() {
         // Required empty public constructor
     }
@@ -29,21 +27,17 @@ public class SSP_Fragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_ssp, container, false);
 
 
-        Button ID = (Button) v.findViewById(R.id.Btn_Help);
-        ID.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                SSP_Fragment_Help NAME = new SSP_Fragment_Help();
-                fragmentTransaction.replace(R.id.fragment, NAME);
-                fragmentTransaction.commit();
-
-            }
-        });
+        mTabhost = (FragmentTabHost) v.findViewById(R.id.ssp_tabhost);
+        mTabhost.setup(getActivity(), getChildFragmentManager(), R.id.realtabcontent);
+        mTabhost.addTab(mTabhost.newTabSpec("SSP_Anonym").setIndicator("Anonym Rådgivning"), SSP_Anonym.class, null);
+        mTabhost.addTab(mTabhost.newTabSpec("SSP_Fritid").setIndicator("Fritids Job"), SSP_Fritid.class, null);
 
         return v;
+
     }
 
 
 }
+
+
+
