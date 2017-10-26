@@ -51,7 +51,7 @@ public class Registration_page extends AppCompatActivity {
                 String Email = _Email.getText().toString();
                 String Phone = _Phone.getText().toString();
 
-                if(fName.length() != 2 || lName.length() != 2 || pass.equals("") || Email.equals("") || Phone.length() != 6){
+                if(fName.length()< 2 || lName.length() < 2 || pass.equals("") || Email.equals("") || Phone.length() < 8){
                     Toast.makeText(getApplicationContext(), "Venligst udfyld alle felter", Toast.LENGTH_LONG).show();
                 }else {
                     InsertData(fName, lName, pass, Email, Phone);

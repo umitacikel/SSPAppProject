@@ -104,6 +104,11 @@ public class Admin_cube_side extends AppCompatActivity {
 
         });
 
+
+        Button opret_ops = (Button) findViewById(R.id.opret_opslag_cube);
+
+
+
     }
 
     public void begivenhedNotifikation(){
