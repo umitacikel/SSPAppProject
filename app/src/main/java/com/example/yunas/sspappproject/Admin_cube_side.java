@@ -1,6 +1,7 @@
 package com.example.yunas.sspappproject;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.constraint.ConstraintLayout;
@@ -8,12 +9,15 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yunas.sspappproject.R;
@@ -28,16 +32,15 @@ public class Admin_cube_side extends AppCompatActivity {
     Button _Opret_Beg, _Ann_Beg;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_cube_side);
         setTitle("Admin Cube Side");
 
-        openHelper = new Registration_helper(getApplicationContext(), Registration_helper.c_DATABASE_NAME);
+        openHelper = new Begivenhed_helper(getApplicationContext());
         db = openHelper.getWritableDatabase();
-
-
 
 
         Button cube_Begivenhed = (Button) findViewById(R.id.Cube_begivenhed);
@@ -62,6 +65,8 @@ public class Admin_cube_side extends AppCompatActivity {
                  _Ann_Beg = (Button) mView.findViewById(R.id.Begivenhed_annu_Btn);
 
 
+
+
                 _Opret_Beg.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -71,8 +76,22 @@ public class Admin_cube_side extends AppCompatActivity {
                          String _Sted = _begivenhed_Sted.getText().toString();
                          String _Dato = _begivenhed_Dato.getText().toString();
 
-                        c_insertdata(_Emne, _Detaljer, _Sted, _Dato);
-                        Toast.makeText(getApplicationContext(), "Begivenhed oprettet" , Toast.LENGTH_LONG).show();
+                        if(_Emne.length() !=0 && _Detaljer.length() !=0 && _Sted.length() !=0 && _Dato.length() !=0){
+
+                            Begivenhed_helper beghelp = new Begivenhed_helper(getApplicationContext());
+                            beghelp.addData(_Emne, _Detaljer, _Sted, _Dato);
+                            Toast.makeText(getApplicationContext(), "Begivenhed oprettet" , Toast.LENGTH_LONG).show();
+                            dialog.hide();
+
+                        }else if(_Emne.length() ==0 || _Detaljer.length() ==0 || _Sted.length() ==0 || _Dato.length() ==0){
+                            Toast.makeText(getApplicationContext(), "Udfyld venligst alle felter" , Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+
+                _Ann_Beg.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
                         dialog.hide();
                     }
                 });
@@ -84,14 +103,4 @@ public class Admin_cube_side extends AppCompatActivity {
     }
 
 
-
-
-    public void c_insertdata(String _Emne, String _Detaljer, String _Sted, String _Dato){
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(Registration_helper.c_Col_2, _Emne);
-        contentValues.put(Registration_helper.c_Col_3, _Detaljer);
-        contentValues.put(Registration_helper.c_Col_4, _Sted);
-        contentValues.put(Registration_helper.c_Col_5, _Dato);
-        db.insert(Registration_helper.c_TABLE_NAME, null, contentValues);
-    }
 }

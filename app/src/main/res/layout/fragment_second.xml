@@ -22,17 +22,6 @@
                 android:layout_height="30dp"
                 android:layout_weight="1">
             </FrameLayout>
-
-
-            
         </LinearLayout>
-
-
-
-
-
-
-
     </android.support.v4.app.FragmentTabHost>
-
 </FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Begivenhed:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/beg_pop_beg"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/beg_pop_beg"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/beg_pop_detal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Sted:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintRight_toLeftOf="@+id/beg_pop_sted"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Dato:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintRight_toLeftOf="@+id/beg_pop_dato"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Detaljer:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintRight_toLeftOf="@+id/beg_pop_detal"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/beg_pop_sted"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/beg_pop_dato"
+        app:layout_constraintTop_toBottomOf="@+id/beg_pop_detal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/beg_pop_dato"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beg_pop_sted"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/beg_pop_detal"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/beg_pop_sted"
+        app:layout_constraintTop_toBottomOf="@+id/beg_pop_beg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView21" />
+
+
+</android.support.constraint.ConstraintLayout>

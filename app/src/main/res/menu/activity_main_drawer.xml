@@ -22,6 +22,10 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Tetriz" />
         <item
+            android:id="@+id/nav_Personale"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Personale"/>
+        <item
             android:id="@+id/nav_Publikationer"
             android:icon="@drawable/ic_folder_black_24dp"
             android:title="Publikationer" />

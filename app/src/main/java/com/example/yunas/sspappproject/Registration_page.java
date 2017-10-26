@@ -32,7 +32,7 @@ public class Registration_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
 
-        openHelper = new Registration_helper(getApplicationContext(), Registration_helper.DATABASE_NAME);
+        openHelper = new Registration_helper(getApplicationContext());
         _Reg_Button =(Button)findViewById(R.id.Reg_Button);
         _FirstName =(EditText)findViewById(R.id.FirstName);
         _LastName=(EditText)findViewById(R.id.LastName);

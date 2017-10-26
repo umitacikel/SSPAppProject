@@ -1,0 +1,273 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yunas.sspappproject.Personale_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SSP-Organisationen"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/Scroll_UngeRåd"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/UngeRådgivning_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Unge Rådgivning" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            >
+
+            <HorizontalScrollView
+                android:id="@+id/Scroll_Tetriz_Cube"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_below="@+id/textView17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Samer_Zaazou_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Samer Zaazou" />
+
+                    <Button
+                        android:id="@+id/HaniHussain_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Hani Hussain" />
+
+                    <Button
+                        android:id="@+id/HoudaBayoumi_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Houda Bayoumi" />
+
+                    <Button
+                        android:id="@+id/RikkeMøller_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Rikke Møller" />
+
+                    <Button
+                        android:id="@+id/TomislavAntic_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Tomislav Antic" />
+
+                    <Button
+                        android:id="@+id/BahaFleifel_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Baha Fleifel" />
+
+                    <Button
+                        android:id="@+id/EmreKalem_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Emre Kalem" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Scroll_SSP_plus"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/RobertRodriguez_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Robert Rodriguez" />
+
+                    <Button
+                        android:id="@+id/CømertSonsuz_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Cømert Sonsuz" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Scroll_SSP_Organisation"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView14">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Mikkel_Muller_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Mikkel Müller" />
+
+                    <Button
+                        android:id="@+id/Anja_Enggard_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Anja Enggaard" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Scroll_SSP"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Jane_hansen_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Jane Hansen" />
+
+                    <Button
+                        android:id="@+id/Øzcan_Yucel_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Øzcan Yucel " />
+
+                    <Button
+                        android:id="@+id/Kasper_Jørgensen_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Kasper Jørgensen" />
+
+                    <Button
+                        android:id="@+id/JanneBillsteenChristensen_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Janne Billsteen Christensen" />
+
+                    <Button
+                        android:id="@+id/UllaSvendsen_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Ulla Svendsen" />
+
+                    <Button
+                        android:id="@+id/NadineSalem_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Nadine Salem" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Scroll_SSP_Organisation"
+                android:text="SSP"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Scroll_SSP"
+                android:text="SSP+"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Scroll_SSP_plus"
+                android:text="Værestedet Tetriz / Cube"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Scroll_Tetriz_Cube"
+                android:text="Åben Anonym Ungerådgivning"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

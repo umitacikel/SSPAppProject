@@ -38,6 +38,7 @@
         android:onClick="Cube_knap"/>
 
     <Button
+        android:id="@+id/tetriz"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:text=""
@@ -47,4 +48,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="Tetriz_knap"/>
+
+    <Button
+        android:id="@+id/Personale_btn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignLeft="@+id/cube"
+        android:layout_alignStart="@+id/cube"
+        android:layout_alignTop="@+id/tetriz"
+        android:text="Personale"
+        android:onClick="Personale_knap"/>
 </RelativeLayout>

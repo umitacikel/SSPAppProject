@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.yunas.sspappproject.Admin_tetriz_side">
 
+    <Button
+        android:id="@+id/tetriz_begivenhed_btn"
+        android:layout_width="368dp"
+        android:layout_height="108dp"
+        android:text="Opret Tetriz Begivenhed" />
 </android.support.constraint.ConstraintLayout>

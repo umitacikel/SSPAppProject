@@ -101,6 +101,11 @@ public class MainActivity extends AppCompatActivity
             android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.fragment, new SSP_Startside()).commit();
 
+        }else if(id == R.id.nav_Personale){
+            setTitle("Personale");
+            android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment, new Personale_Fragment()).commit();
+
         }else if(id == R.id.Btn_logout){
             Intent intent = new Intent(this, Login_Activity.class);
             startActivity(intent);
@@ -132,5 +137,10 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction().replace(R.id.fragment, new SecondFragment()).commit();
     }
 
+    public void Personale_knap(View view){
+        setTitle("Personale");
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.fragment, new Personale_Fragment()).commit();
+    }
 
 }

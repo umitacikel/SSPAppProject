@@ -15,16 +15,4 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="5dp" />
 
-    <LinearLayout
-        android:layout_width="348dp"
-        android:layout_height="316dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="141dp"
-        android:id="@+id/lineaa"
-        >
-
-
-    </LinearLayout>
-
 </android.support.constraint.ConstraintLayout>

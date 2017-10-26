@@ -3,14 +3,12 @@
     android:layout_width="match_parent"
     android:layout_marginTop="56dp"
     android:layout_height="match_parent"
-    tools:context="com.example.yunas.sspappproject.cube_begivenheder">
+    tools:context="com.example.yunas.sspappproject.tetriz_opslag">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <ListView
-        android:id="@+id/listview_cubebeg"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
 
-    </ListView>
 </FrameLayout>

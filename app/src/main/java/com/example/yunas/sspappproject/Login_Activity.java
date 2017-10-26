@@ -31,7 +31,7 @@ public class Login_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_login_);
 
 
-        openHelper = new Registration_helper(getApplicationContext(), Registration_helper.DATABASE_NAME);
+        openHelper = new Registration_helper(getApplicationContext());
         db = openHelper.getReadableDatabase();
 
 
@@ -82,20 +82,13 @@ public class Login_Activity extends AppCompatActivity {
                         Log.d("Person i Array", bruger.toString());
                         //-----------------------
 
+                        final View mView = getLayoutInflater().inflate(R.layout.nav_header_main, null);
+                        TextView Persons_navn = (TextView) mView.findViewById(R.id.velkommen_view);
+                        Persons_navn.setText("A");
+
+
                         _Login_Email.setText("");
                         _Login_Password.setText("");
-
-
-                        String BrugerNavn = bruger.get(1);
-
-                       // TextView navnPåBruger = (TextView)findViewById(R.id.NameOnUser);
-                      //  navnPåBruger.setText(BrugerNavn);
-/*
-                        LayoutInflater inflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
-                        View vi = inflater.inflate(R.layout.nav_header_main, null);
-                        TextView tv = (TextView)v.findViewById(R.id.NameOnUser);
-                        tv.setText("njaskd");
-*/
 
 
                     } else {

@@ -4,14 +4,22 @@
     android:layout_height="match_parent"
     tools:context="com.example.yunas.sspappproject.FirstFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tetriz_tabhost"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50dp"
-        android:text="TETRIZ INFO" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-
-
+            <FrameLayout
+                android:id="@+id/tetriz_realtabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1">
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
 </FrameLayout>
