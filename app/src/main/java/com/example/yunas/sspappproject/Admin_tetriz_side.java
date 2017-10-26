@@ -1,10 +1,14 @@
 package com.example.yunas.sspappproject;
 
+import android.app.NotificationManager;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,6 +66,7 @@ public class Admin_tetriz_side extends AppCompatActivity {
                             beghelp.tetriz_addData(_Emne, _Detaljer, _Sted, _Dato);
                             Toast.makeText(getApplicationContext(), "Begivenhed oprettet" , Toast.LENGTH_LONG).show();
                             dialog.hide();
+                            begivenhedNotifikation();
 
                         }else if(_Emne.length() ==0 || _Detaljer.length() ==0 || _Sted.length() ==0 || _Dato.length() ==0){
                             Toast.makeText(getApplicationContext(), "Udfyld venligst alle felter" , Toast.LENGTH_LONG).show();
@@ -79,6 +84,20 @@ public class Admin_tetriz_side extends AppCompatActivity {
 
             }
         });
+
+    }
+    public void begivenhedNotifikation(){
+
+
+        NotificationCompat.Builder notificationbuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                .setDefaults(NotificationCompat.DEFAULT_ALL)
+                .setSmallIcon(R.drawable.ssplogo)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ssplogo))
+                .setContentTitle("Tetriz oprettede en ny begivenhed")
+                .setContentText("Tjek begivenheder");
+
+        NotificationManager nfhm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        nfhm.notify(1, notificationbuilder.build());
 
     }
 }
