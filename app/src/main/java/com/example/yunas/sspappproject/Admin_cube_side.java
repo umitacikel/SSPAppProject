@@ -33,6 +33,7 @@ public class Admin_cube_side extends AppCompatActivity {
     SQLiteDatabase db;
     EditText _begivenhed_Emne, _begivenhed_Detaljer, _begivenhed_Sted, _begivenhed_Dato;
     Button _Opret_Beg, _Ann_Beg;
+    Context context;
 
 
 
@@ -106,7 +107,47 @@ public class Admin_cube_side extends AppCompatActivity {
 
 
         Button opret_ops = (Button) findViewById(R.id.opret_opslag_cube);
+        opret_ops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final AlertDialog.Builder tbuilder = new AlertDialog.Builder(Admin_cube_side.this);
+                View tView = getLayoutInflater().inflate(R.layout.opslag_layout, null);
 
+                tbuilder.setView(tView);
+                final AlertDialog dialog = tbuilder.create();
+                dialog.show();
+
+                final EditText opslag_emne = (EditText) tView.findViewById(R.id.opslag_Emne);
+                final EditText opslag_detaljer = (EditText) tView.findViewById(R.id.Opslag_detaljer);
+
+                Button opslag_opret = (Button) tView.findViewById(R.id.opslag_opret);
+                Button opslag_annu = (Button) tView.findViewById(R.id.Opslag_annu);
+
+                opslag_opret.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String _opslag_emne = opslag_emne.getText().toString();
+                        String _opslag_detaljer = opslag_detaljer.getText().toString();
+
+                        if(_opslag_emne.length() != 0 && _opslag_detaljer.length() != 0){
+
+                            Opslag_helper ops_help = new Opslag_helper(getApplicationContext(), Opslag_helper.Cops_TABLE_NAME, null, 1);
+                            ops_help.addDataCops(_opslag_emne, _opslag_detaljer);
+                            Toast.makeText(getApplicationContext(), "Opslag oprettet" , Toast.LENGTH_LONG).show();
+                            dialog.hide();
+                        }else if(_opslag_emne.length() == 0 || _opslag_detaljer.length() == 0){
+                            Toast.makeText(getApplicationContext(), "Udfyld alle felter" , Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+                opslag_annu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.hide();
+                    }
+                });
+            }
+        });
 
 
     }

@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Emne" />
+        android:hint="Emne"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/Opslag_detaljer"
@@ -18,6 +18,18 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.13"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Detaljer" />
+        android:hint="Detaljer"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/opslag_opret"
+        android:layout_width="135dp"
+        android:layout_height="76dp"
+        android:text="Opret" />
+
+    <Button
+        android:id="@+id/Opslag_annu"
+        android:layout_width="136dp"
+        android:layout_height="70dp"
+        android:text="Annuller" />
 </LinearLayout>

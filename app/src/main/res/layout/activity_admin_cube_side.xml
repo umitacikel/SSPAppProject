@@ -12,15 +12,18 @@
         android:layout_width="368dp"
         android:layout_height="108dp"
         android:text="Opret Begivenhed"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="5dp" />
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/opret_opslag_cube"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/opret_opslag_cube"
         android:layout_width="368dp"
         android:layout_height="108dp"
         android:text="Opret Opslag"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="113dp" />
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cube_begivenhed"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

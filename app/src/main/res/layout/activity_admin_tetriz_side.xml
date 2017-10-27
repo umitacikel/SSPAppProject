@@ -7,8 +7,21 @@
     tools:context="com.example.yunas.sspappproject.Admin_tetriz_side">
 
     <Button
+        android:id="@+id/tetriz_opslag_btn"
+        android:layout_width="368dp"
+        android:layout_height="108dp"
+        android:text="Opret Tetriz Opslag"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tetriz_begivenhed_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/tetriz_begivenhed_btn"
         android:layout_width="368dp"
         android:layout_height="108dp"
-        android:text="Opret Tetriz Begivenhed" />
+        android:text="Opret Tetriz Begivenhed"
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tetriz_opslag_btn"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
