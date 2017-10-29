@@ -1,6 +1,8 @@
 package com.example.yunas.sspappproject;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -37,8 +39,11 @@ public class SSP_Fritid extends Fragment implements View.OnClickListener {
 
     public void onClick(View v) {
         if (v.getId() == R.id.BtnPdf) {
-            android.support.v4.app.FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.fragment,  new Pdf_Viewer() ).commit();
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+
+            intent.setDataAndType(Uri.parse( "http://docs.google.com/viewer?url=" + "https://ssp.helsingor.dk/media/7790188/blanket-til-indstilling-til-fritidspas.pdf"), "text/html");
+
+            startActivity(intent);
         }
 
     }

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#002e62</color>
     <color name="colorPrimaryDark">#002e62</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#0b5eba</color>
     ActionBar bar = getActionBar();
     bar.setBackgroundDrawable(new ColorDrawable("COLOR"));
 </resources>

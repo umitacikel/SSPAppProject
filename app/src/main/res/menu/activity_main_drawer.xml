@@ -11,7 +11,7 @@
             android:title="Startside"/>
         <item
             android:id="@+id/nav_SSP"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="SSP" />
         <item
             android:id="@+id/nav_Cube"
@@ -29,11 +29,18 @@
             android:id="@+id/nav_Publikationer"
             android:icon="@drawable/ic_folder_black_24dp"
             android:title="Publikationer" />
-        <item
-            android:id="@+id/Btn_logout"
-            android:icon="@drawable/logout"
-            android:title="Logud"/>
+
     </group>
+    <item android:title="Indstillinger">
+        <menu>
+            <item
+                android:id="@+id/Btn_logout"
+                android:icon="@drawable/logout"
+                android:title="Logud" />
+
+
+        </menu>
+    </item>
 
 
 

@@ -2,9 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.yunas.sspappproject.FirstFragment"
+    tools:context="com.example.yunas.sspappproject.FirstFragment">
 
-    >
+
+
     <android.support.v4.app.FragmentTabHost
         android:id="@+id/ssp_tabhost"
         android:layout_width="match_parent"
